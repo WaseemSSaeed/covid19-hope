@@ -24,7 +24,7 @@ body{
 }
 #navBar #vision{
     position: absolute;
-    right: 0px;
+    right: 0px; 
     font-size: 30px;
     font-family: sans-serif;
     color: white;

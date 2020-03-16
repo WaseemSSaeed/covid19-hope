@@ -5,16 +5,31 @@ body{
     overflow-x: hidden;
     background-color: gray;
 }
-#navBar{
+#navBar, #navBar2{
     position: fixed;
     z-index: 1;
     height: 0.6in;
-    background-color: tomato;
+    background-color: rgb(31, 114, 23);
     width: 100vw;
     margin: 0px;
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 40% 40% 20%;
     overflow-y: hidden;
+}
+#navBar2{
+    top: 0.6in;
+    grid-template-columns: 20% 20% 20%;
+}
+#navBar2 button{
+    outline: none;
+    border: none;
+    height: 80%;
+    background-color: blueviolet;
+    color: white;
+    margin: 5px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
 }
 #headline{
     display: inline-block;
@@ -33,10 +48,11 @@ body{
 }
 #mainTable{
     position: absolute;
-    top: 0.7in;
+    top: 1.4in;
     width: 100vw;
     height: fit-content;
     background: transparent;
+    display: grid;
 }
 #flag{
     height: 200px;
@@ -47,10 +63,10 @@ body{
     margin-left: 10px;
 }
 #pray{
-    font-size: 20px;
+    font-size: 30px;
     color: white;
     grid-column-start: 2;
-    margin-top: 10px;
+    margin-top: 5px;
     line-height: 50px;
     display: inline-flex;
 }
@@ -72,18 +88,34 @@ body{
 
 #hope{
     background-color: rgb(66, 13, 66);
-    margin: 10px;
     border-radius: 30px;
     height: fit-content;
+    cursor: pointer;
+    padding: 0px;
+    height: fit-content;
+    display: inline-table;
+    margin: 10px;
+    position: relative;
 }
 .container{
-    width: 100vw;
-    margin-left: 5vw;
+    min-width: 100vw;
     padding: 0px;
+    margin: 0px;
     background-color: transparent;
+    position: absolute;
 }
 #hope-title{
-    font-size: 20px;
+    font-size: 24px;
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: tomato;
+    position: relative;
+    margin-left: 0px;
+    margin-right: 0px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    margin-bottom: 0px;
+    padding: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
 }

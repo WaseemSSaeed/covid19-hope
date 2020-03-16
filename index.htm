@@ -353,7 +353,7 @@
 
 
 
-
+<!-- 11111111111111111111111111111111111111111************************************************-->
 <!doctype html>
 <html>
   <head>
@@ -396,7 +396,9 @@
     <script type="text/javascript">
       var clientId = 'COVID19-hope.apps.googleusercontent.com';
       var apiKey = 'AIzaSyCZ73jezaBzdzkyI_e2iPem2cq8a-fzygw';
-      var scopes = 'https://www.googleapis.com/auth/gmail.readonly';
+      var scopes =
+              'https://www.googleapis.com/auth/gmail.readonly '+
+              'https://www.googleapis.com/auth/gmail.send';
 
       function handleClientLoad() {
         gapi.client.setApiKey(apiKey);

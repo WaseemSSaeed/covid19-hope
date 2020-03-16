@@ -1,0 +1,89 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    overflow-x: hidden;
+    background-color: gray;
+}
+#navBar{
+    position: fixed;
+    z-index: 1;
+    height: 0.6in;
+    background-color: tomato;
+    width: 100vw;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    overflow-y: hidden;
+}
+#headline{
+    display: inline-block;
+    font-size: 30px;
+    font-family: sans-serif;
+    color: white;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+#navBar #vision{
+    position: absolute;
+    right: 0px;
+    font-size: 30px;
+    font-family: sans-serif;
+    color: white;
+}
+#mainTable{
+    position: absolute;
+    top: 0.7in;
+    width: 100vw;
+    height: fit-content;
+    background: transparent;
+}
+#flag{
+    height: 200px;
+    width: 100px;
+    top: 0px;
+    margin-top: -30px;
+    padding-top: 0px;
+    margin-left: 10px;
+}
+#pray{
+    font-size: 20px;
+    color: white;
+    grid-column-start: 2;
+    margin-top: 10px;
+    line-height: 50px;
+    display: inline-flex;
+}
+/*================================================================================================*/
+#topBar{
+    width: 100vw;
+    height: fit-content;
+    padding: 20px;
+    padding-top: 0px;
+    text-align: center;
+    background-color: teal;
+}
+#topBar p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    color: white;
+}
+/*================================================================================================*/
+
+#hope{
+    background-color: rgb(66, 13, 66);
+    margin: 10px;
+    border-radius: 30px;
+    height: fit-content;
+}
+.container{
+    width: 100vw;
+    margin-left: 5vw;
+    padding: 0px;
+    background-color: transparent;
+}
+#hope-title{
+    font-size: 20px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

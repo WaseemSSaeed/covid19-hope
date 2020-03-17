@@ -4,6 +4,8 @@ body{
     width: 100vw;
     overflow-x: hidden;
     background-color: gray;
+    background-color: rgb(82, 81, 81);
+    background-color: crimson;
 }
 #navBar, #navBar2{
     position: fixed;
@@ -13,15 +15,16 @@ body{
     width: 100vw;
     margin: 0px;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 40% 40% 20%;
     overflow-y: hidden;
 }
 #navBar2{
     top: 0.6in;
-    grid-template-columns: 20% 20% 20%;
-    background-color: rgba(255, 255, 255, 0.747);
+    display: block;
+    background-color: rgba(255, 255, 255, 0.842);
+    overflow-y: unset;
 }
-#navBar2 button{
+.hope-btn{
     outline: none;
     border: none;
     height: 80%;
@@ -54,6 +57,7 @@ body{
     height: fit-content;
     background: transparent;
     display: grid;
+    z-index: -1;
 }
 #flag{
     height: 200px;
@@ -71,18 +75,32 @@ body{
     line-height: 50px;
     display: inline-flex;
 }
+
 /*================================================================================================*/
 #topBar{
     width: 100vw;
     height: fit-content;
     padding: 10px;
     text-align: center;
-    background-color: rgba(220, 20, 60, 0.829);
+    background-color: rgba(220, 20, 60, 0.229);
 }
 #topBar p{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 30px;
     color: white;
+}
+
+.dropdown-item:hover{
+    background-color: crimson;
+    color: white;
+  }
+.dropdown-item{
+    color: white;
+}
+.dropdown-menu{
+    background-color: rgba(128, 128, 128, 0.644);
+    color: white;
+    border-radius: unset;
 }
 /*================================================================================================*/
 
@@ -118,4 +136,17 @@ body{
     padding: 5px;
     padding-left: 30px;
     padding-right: 30px;
+}
+
+#soon{
+    width: 100vw;
+    display: grid;
+}
+#soon span{
+    font-size: 60px;
+    color: white;
+    display: inline-block;
+    margin: auto;
+    margin-top: 300px;
+    color: white;
 }

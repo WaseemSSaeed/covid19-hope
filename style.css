@@ -158,7 +158,7 @@ a{
     background-color: rgba(255, 255, 255, 0.815);
     border-bottom-right-radius: 50px;
     border-top-left-radius: 50px;
-    animation: anmHope 1s alternate infinite;
+    animation: anmHope 1s alternate /*i*/;
 }
 @keyframes anmHope{
     0%{
@@ -189,7 +189,7 @@ a{
     padding-left: 30px;
     display: grid;
     cursor: pointer;
-    animation: anmHope2 0.5s alternate infinite;
+    animation: anmHope2 0.5s alternate /*i*/;
 }
 @keyframes anmHope2{
     0%{
@@ -202,8 +202,9 @@ a{
 #hope-header span{
     margin: auto;
     margin-left: 0px;
+    margin-top: 5px;
 }
-#hope-content{
+.hope-content{
     width: 100%;
     color: rgb(26, 59, 156);
     padding: 5%;

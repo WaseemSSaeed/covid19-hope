@@ -60,7 +60,7 @@
             <div id="hope-header" style="background-color: crimson;">
               <span>Open Source Project</span>
             </div>
-            <p id="hope-content">
+            <p class="hope-content">
               COVID19-Hope is an open source project, so you are very welcome to press the "Edit on GitHub" 
               button and edit what you think is good for the project
               , we are (all of the glob) now united agianst the virus, stay strong! we will win the battle together.
@@ -74,9 +74,9 @@
             <div id="hope-header">
               <span>COVID19-Hope</span>
             </div>
-            <iframe width="90%" height="" style="margin-left: 5%; margin-top: 10px" src="https://www.youtube.com/embed/mOV1aBVYKGA" frameborder="0"
+            <iframe width="90%" height="180px" style="margin-left: 5%; margin-top: 10px" src="https://www.youtube.com/embed/mOV1aBVYKGA" frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <p id="hope-content">
+            <p class="hope-content">
               We understand here the importance of collaboration, so we collect the efforts in one platform to make it easier to connect the dots against the virus
               .
             </p>
@@ -90,12 +90,10 @@
               <span>Understand the math</span>
             </div>
             <img src="./img/worldometers_graph.PNG" style="filter:invert(90%); height: 180px; margin: auto; margin-top: 10px" alt="">
-            <p id="hope-content" style="padding-bottom: 50px;">
-              While typing this, COVID-19 worldwide reached 215000+ cases, it's about 0.0027% of world population.
-              virus spreading is kind of always starting with a logarithmic curve wich means a lot of accelartion
-              <a href="#math" style="color: royalblue;">(More <span style="font-family: leCafeTech2; font-size: 16px">f</span> )</a>
-            </p>
-            <a style="position: absolute; bottom: 10px; right: 30px" target="_blank" href="https://github.com/WaseemSSaeed/covid19-hope/blob/master/index.htm">
+            <p class="hope-content" style="padding-bottom: 50px;">
+              <script src="./loads/hope-content-math.js"></script>
+              </p>
+            <a style="position: absolute; bottom: 10px; right: 30px" target="_blank" href="https://github.com/WaseemSSaeed/covid19-hope/blob/master/loads/hope-content-math.js">
               <button class="btn btn-primary" style="font-size: 20px;">Edit on GitHub</button>
             </a>
           </div>
@@ -104,9 +102,9 @@
             <div id="hope-header">
               <span>Understand the math</span>
             </div>
-            <iframe width="90%" height="" style="margin-left: 5%; margin-top: 10px" src="https://www.youtube.com/embed/mOV1aBVYKGA" frameborder="0"
+            <iframe width="90%" height="180px" style="margin-left: 5%; margin-top: 10px" src="https://www.youtube.com/embed/mOV1aBVYKGA" frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <p id="hope-content">
+            <p class="hope-content">
               We understand here the importance of collaboration, so we collect the efforts in one platform to make it easier to connect the dots against the virus
               .
             </p>
@@ -121,10 +119,9 @@
             </div>
             <iframe width="90%" height="" style="margin-left: 5%; margin-top: 10px" src="https://www.youtube.com/embed/mOV1aBVYKGA" frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <p id="hope-content">
-              We understand here the importance of collaboration, so we collect the efforts in one platform to make it easier to connect the dots against the virus
-              .
-            </p>
+            <div class="hope-content" id="hope-content-math">
+              <script src="./loads/hope-content-math.js"></script>
+            </div>
             <a style="position: absolute; bottom: 10px; right: 30px" target="_blank" href="https://github.com/WaseemSSaeed/covid19-hope/blob/master/index.htm">
               <button class="btn btn-primary" style="font-size: 20px;">Edit on GitHub</button>
             </a>
@@ -136,7 +133,7 @@
             </div>
             <iframe width="90%" height="" style="margin-left: 5%; margin-top: 10px" src="https://www.youtube.com/embed/mOV1aBVYKGA" frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <p id="hope-content">
+            <p class="hope-content">
               We understand here the importance of collaboration, so we collect the efforts in one platform to make it easier to connect the dots against the virus
               .
             </p>
@@ -470,21 +467,18 @@
   </div>
 </body>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
-
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
       // Prevent default anchor click behavior
       event.preventDefault();
-
       // Store hash
       var hash = this.hash;
-
       // Using jQuery's animate() method to add smooth page scroll
       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({

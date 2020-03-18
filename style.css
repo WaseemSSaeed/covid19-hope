@@ -15,6 +15,10 @@ td{
 }
 button{
     cursor: pointer;
+    filter: opacity(93%);
+}
+button:hover{
+    filter: opacity(100%);
 }
 a{
     color: white;
@@ -151,10 +155,20 @@ a{
 
 #hope{
     padding: 0px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.815);
     border-bottom-right-radius: 50px;
     border-top-left-radius: 50px;
-
+    animation: anmHope 1s alternate infinite;
+}
+@keyframes anmHope{
+    0%{
+        border-bottom-right-radius: 50px;
+        border-top-left-radius: 50px;
+    }
+    100%{
+        border-bottom-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
 }
 .container{
     min-width: 100vw;
@@ -166,16 +180,24 @@ a{
 
 #hope-header{
     margin-top: 0px;
-    background-color: green;
-    height: 40px;
+    background-color: rgb(48, 92, 224);
     width: 100%;
     border-top-left-radius: 50px;
     color: white;
-    font-size: 20px;
+    font-size: 30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding-left: 30px;
     display: grid;
     cursor: pointer;
+    animation: anmHope2 0.5s alternate infinite;
+}
+@keyframes anmHope2{
+    0%{
+        border-top-left-radius: 50px;
+    }
+    100%{
+        border-top-left-radius: 10px;
+    }
 }
 #hope-header span{
     margin: auto;

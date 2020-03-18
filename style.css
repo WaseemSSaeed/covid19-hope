@@ -150,15 +150,11 @@ a{
 /*================================================================================================*/
 
 #hope{
-    background-color: rgb(66, 13, 66);
-    border-radius: 30px;
-    height: fit-content;
-    cursor: pointer;
     padding: 0px;
-    height: fit-content;
-    display: inline-table;
-    margin: 10px;
-    position: relative;
+    background-color: white;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
+
 }
 .container{
     min-width: 100vw;
@@ -167,22 +163,24 @@ a{
     background-color: transparent;
     position: absolute;
 }
-#hope-title{
-    font-size: 24px;
-    color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: tomato;
-    position: relative;
-    margin-left: 0px;
-    margin-right: 0px;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-    margin-bottom: 0px;
-    padding: 5px;
-    padding-left: 30px;
-    padding-right: 30px;
-}
 
+#hope-header{
+    margin-top: 0px;
+    background-color: green;
+    height: 40px;
+    width: 100%;
+    border-top-left-radius: 50px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 30px;
+    display: grid;
+    cursor: pointer;
+}
+#hope-header span{
+    margin: auto;
+    margin-left: 0px;
+}
 #soon{
     width: 100vw;
     margin-top: -30vh;
@@ -212,4 +210,8 @@ a{
 #guide{
     padding-top: 300px;
     display: block;
+}
+/*============================================================*/
+#open-source-prjs{
+    filter: opacity(90%);
 }

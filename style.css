@@ -262,3 +262,46 @@ a{
 #open-source-prjs{
     filter: opacity(90%);
 }
+/*88888888888888888888888888888888888888888888888888888888888*/
+#outbreak{
+    width: 80%;
+    height: 60%;
+    overflow: hidden;
+    margin-left: 10%;
+}
+#outbreak-body{
+    animation: anmUp 10s alternate infinite;
+}
+#outbreak-body:hover{
+    animation-play-state: paused;
+}
+.up-content{
+    position: relative;
+    margin: 0px;
+    margin-top: -20px;
+    padding: 20px;
+    z-index: 0;
+    font-size: 20px;
+}
+.update{
+    background-color: rgba(76, 0, 130, 0.76);
+    min-height: 100px;
+    width: 100%;
+    margin-top: 4px;
+    position: relative;
+}
+@keyframes anmUp{
+    100%{
+        margin-top: -100%;
+    }
+    0%{
+        margin-top: 0px;
+    }
+}
+.up-headline{
+    width: 100%;
+    font-size: 20px;
+    background-color: gray;
+    color: white;
+    padding-left: 10px;
+}

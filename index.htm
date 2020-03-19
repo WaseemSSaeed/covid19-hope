@@ -56,10 +56,14 @@
     <div class="row" style="width: 100vw; margin: 0px; padding: 0px; min-height: 100vh">
       <div id="intro1" class="col-lg-6 col-12" style="overflow: hidden;">
       </div>
-      <div id="intro2" class="col-lg-6 col-12" style="background-color: rgba(60, 220, 20, 0.76); height: 100vh">
-        <p style="font-size: 100px;">COVID19-Hope</p>
-        <br>
+      <div id="intro2" class="col-lg-6 col-12" style="position: relative; background-color: rgba(60, 220, 20, 0.76); height: 100vh">
+        <p style="font-size: 60px;">COVID19-Hope</p>
         <a href="#mainTable"><button class="btn btn-primary btn-get-started">Get Started</button></a>
+        <br><br>
+        <div id="outbreak">
+          <div id="outbreak-body">
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -478,7 +482,24 @@
 </body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
+<script src="./loads/news/newsData.js"></script>
+<script>
+  var i = 0;
+  while(i != nData.length){
+    document.getElementById('outbreak-body').innerHTML += '\
+                          <a style="text-decoration: unset" target="_blank" href="'+nData[i][3]+'">\
+                          <div class="update">\
+                            <p id="uph'+i+'" class="up-headline">' + nData[i][0] + ' - '+ nData[i][1] + '</p>\
+                            <p class="up-content">' + nData[i][2] + '</p>\
+                          </div></a>\
+                          ';
+    if(nData[i][4] == 'star'){
+      id = "uph"+i;
+      document.getElementById(id).style.backgroundColor = "crimson";
+    }
+    i++;
+  }
+</script>
 <script>
   var isMobile = false; //initiate as false
   // device detection
@@ -489,6 +510,16 @@
       document.getElementById("intro2").style.height = "70vh";
       document.getElementById("intro1").style.backgroundPositionY = "-200px";
       document.getElementById("intro1").style.backgroundPositionX = "unset";
+      var x = document.getElementsByClassName("up-content");
+      var i;
+      for (i = 0; i < x.length; i++) {
+        x[i].style.fontSize = "30px";
+      }
+      var x = document.getElementsByClassName("up-headline");
+      var i;
+      for (i = 0; i < x.length; i++) {
+        x[i].style.fontSize = "30px";
+      }
   }
 $(document).ready(function(){
   // Add smooth scrolling to all links

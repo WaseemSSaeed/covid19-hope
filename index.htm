@@ -61,7 +61,7 @@
           </div>
         </div>
       </div>
-      <div id="intro2" class="col-lg-6 col-12" style="position: relative; background-color: rgba(60, 220, 20, 0.76); height: 100vh">
+      <div id="intro2" class="col-lg-6 col-12" style="position: relative; background-color: rgba(48, 163, 19, 0.74); height: 100vh">
         <p style="font-size: 100px;">COVID19-Hope</p>
         <a href="#mainTable"><button class="btn btn-primary btn-get-started">Get Started</button></a>
       </div>
@@ -71,7 +71,7 @@
   <div style="min-height: 100vh; width: 100vw; padding-top: 1.2in; display: grid" id="mainTable">
         <div id="mn-row" class="row" style="width: 100vw; margin-left: 10vw; padding-top: 2vh; height: 90%">
           
-          <div id="hope" style="margin: 5px" class="col col-lg-3 col-md-5 col-10">
+          <div id="hope" style="margin: 5px" class="col col-lg-3 col-10">
             <div id="hope-header" style="background-color: crimson;">
               <span>Open Source Project</span>
             </div>
@@ -85,11 +85,11 @@
             </a>
           </div>
           
-          <div id="hope" style="margin: 5px" class="col col-lg-3 col-md-5 col-sm-12 col-11">
+          <div id="hope" style="margin: 5px" class="col col-lg-3 col-10">
             <div id="hope-header">
               <span>COVID19-Hope</span>
             </div>
-            <iframe width="90%" height="180px" style="margin-left: 5%; margin-top: 10px" src="https://www.youtube.com/embed/mOV1aBVYKGA" frameborder="0"
+            <iframe class="hope-img" width="90%" height="180px" style="margin-left: 5%; margin-top: 10px" src="https://www.youtube.com/embed/mOV1aBVYKGA" frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <p class="hope-content" id="hc-about">
               <script src="./loads/content-about.js"></script>
@@ -99,11 +99,11 @@
             </a>
           </div>
           
-          <div id="hope" style="margin: 5px; display: grid" class="col col-lg-3 col-md-5 col-sm-12 col-11">
+          <div id="hope" style="margin: 5px; display: grid" class="col col-lg-3 col-10">
             <div id="hope-header">
               <span>Understand the math</span>
             </div>
-            <img src="./img/worldometers_graph.PNG" style="filter:invert(90%); height: 180px; margin: auto; margin-top: 10px" alt="">
+            <img class="hope-img" src="./img/worldometers_graph.PNG" style="filter:invert(90%); height: 180px; margin: auto; margin-top: 10px" alt="">
             <p class="hope-content" style="padding-bottom: 50px;">
               <script src="./loads/hope-content-math.js"></script>
               </p>
@@ -112,11 +112,11 @@
             </a>
           </div>
 
-          <div id="hope" style="margin: 5px" class="col col-lg-3 col-md-5 col-sm-12 col-11">
+          <div id="hope" style="margin: 5px" class="col col-lg-3 col-10">
             <div id="hope-header">
               <span>Understand the math</span>
             </div>
-            <iframe width="90%" height="180px" style="margin-left: 5%; margin-top: 10px" src="https://www.youtube.com/embed/mOV1aBVYKGA" frameborder="0"
+            <iframe class="hope-img" width="90%" height="180px" style="margin-left: 5%; margin-top: 10px" src="https://www.youtube.com/embed/mOV1aBVYKGA" frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <p class="hope-content">
               We understand here the importance of collaboration, so we collect the efforts in one platform to make it easier to connect the dots against the virus
@@ -127,11 +127,11 @@
             </a>
           </div>
 
-          <div id="hope" style="margin: 5px" class="col col-lg-3 col-md-5 col-sm-12 col-11">
+          <div id="hope" style="margin: 5px" class="col col-lg-3 col-10">
             <div id="hope-header">
               <span>Understand the math</span>
             </div>
-            <iframe width="90%" height="" style="margin-left: 5%; margin-top: 10px" src="https://www.youtube.com/embed/mOV1aBVYKGA" frameborder="0"
+            <iframe class="hope-img" width="90%" height="" style="margin-left: 5%; margin-top: 10px" src="https://www.youtube.com/embed/mOV1aBVYKGA" frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <p class="hope-content" id="hope-content-math">
               <script src="./loads/hope-content-math.js"></script>
@@ -141,11 +141,11 @@
             </a>
           </div>
 
-          <div id="hope" style="margin: 5px" class="col col-lg-3 col-md-5 col-sm-12 col-11">
+          <div id="hope" style="margin: 5px" class="col col-lg-3 col-10">
             <div id="hope-header">
               <span>Understand the math</span>
             </div>
-            <iframe width="90%" height="" style="margin-left: 5%; margin-top: 10px" src="https://www.youtube.com/embed/mOV1aBVYKGA" frameborder="0"
+            <iframe class="hope-img" width="90%" height="" style="margin-left: 5%; margin-top: 10px" src="https://www.youtube.com/embed/mOV1aBVYKGA" frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <p class="hope-content">
               We understand here the importance of collaboration, so we collect the efforts in one platform to make it easier to connect the dots against the virus
@@ -515,8 +515,16 @@
 
       document.getElementById("intro1").style.height = "30vh";
       document.getElementById("intro2").style.height = "70vh";
-      document.getElementById("intro1").style.backgroundPositionY = "-200px";
+      document.getElementById("intro1").style.backgroundPositionY = "unset";
       document.getElementById("intro1").style.backgroundPositionX = "unset";
+      document.getElementById("intro1").style.backgroundSize = "cover";
+
+      var x = document.getElementsByTagName("button");
+      var i;
+      for (i = 0; i < x.length; i++) {
+        x[i].style.fontSize = "30px";
+      }
+
       var x = document.getElementsByClassName("up-content");
       var i;
       for (i = 0; i < x.length; i++) {
@@ -526,6 +534,16 @@
       var i;
       for (i = 0; i < x.length; i++) {
         x[i].style.fontSize = "30px";
+      }
+      var x = document.getElementsByClassName("hope-content");
+      var i;
+      for (i = 0; i < x.length; i++) {
+        x[i].style.fontSize = "35px";
+      }
+      var x = document.getElementsByClassName("hope-img");
+      var i;
+      for (i = 0; i < x.length; i++) {
+        x[i].style.height = "300px";
       }
   }
 $(document).ready(function(){

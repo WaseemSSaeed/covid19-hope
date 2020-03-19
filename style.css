@@ -179,7 +179,7 @@ a{
     background-color: rgba(255, 255, 255, 0.815);
     border-bottom-right-radius: 50px;
     border-top-left-radius: 50px;
-    animation: anmHope 1s alternate /*i*/;
+    animation: anmHope 1s alternate infinite;
 }
 @keyframes anmHope{
     0%{
@@ -209,7 +209,7 @@ a{
     padding-left: 30px;
     display: grid;
     cursor: pointer;
-    animation: anmHope2 0.5s alternate /*i*/;
+    animation: anmHope2 0.5s alternate infinite;
 }
 @keyframes anmHope2{
     0%{

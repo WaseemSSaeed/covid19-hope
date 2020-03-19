@@ -19,6 +19,8 @@ body{
     margin-left: 0px;
     padding-top: 1.2in;
     color: white;
+    overflow: hidden;
+
 }
 #intro1{
     background: url(./img/people-taking-picture-of-a-painting-of-mona-lisa-with-face-3957980.jpg);
@@ -268,15 +270,16 @@ a{
     height: 60%;
     overflow: hidden;
     margin-left: 10%;
+    position: absolute;
 }
 #outbreak-body{
-    animation: anmUp 10s alternate infinite;
+    animation: anmUp 10s linear infinite;
+    overflow: hidden;
 }
 #outbreak-body:hover{
     animation-play-state: paused;
 }
 .up-content{
-    position: relative;
     margin: 0px;
     margin-top: -20px;
     padding: 20px;
@@ -288,14 +291,13 @@ a{
     min-height: 100px;
     width: 100%;
     margin-top: 4px;
-    position: relative;
 }
 @keyframes anmUp{
     100%{
         margin-top: -100%;
     }
     0%{
-        margin-top: 0px;
+        margin-top: 100%;
     }
 }
 .up-headline{

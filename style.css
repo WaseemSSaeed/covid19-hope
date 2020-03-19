@@ -180,7 +180,7 @@ a{
     background-color: rgba(255, 255, 255, 0.815);
     border-bottom-right-radius: 50px;
     border-top-left-radius: 50px;
-    animation: anmHope 1s alternate infinite;
+    /*animation: anmHope 1s alternate infinite;*/
 }
 @keyframes anmHope{
     0%{
@@ -272,6 +272,7 @@ a{
     overflow: hidden;
     margin-left: 10%;
     position: absolute;
+    overflow-y: hidden;
 }
 #outbreak-body{
     animation: anmUp 20s linear infinite;
@@ -289,7 +290,7 @@ a{
 }
 .update{
     background-color: rgba(76, 0, 130, 0.76);
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.667);
     color: black;
     min-height: 100px;
     width: 100%;
@@ -297,7 +298,7 @@ a{
 }
 @keyframes anmUp{
     100%{
-        margin-top: -100%;
+        margin-top: -130%;
     }
     0%{
         margin-top: 100%;

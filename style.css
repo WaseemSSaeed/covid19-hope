@@ -10,6 +10,16 @@ body{
     z-index: 1;
     padding-right: 5%;
 }
+#intro{
+    min-height: 100vh;
+    margin-bottom: 100px;
+    width: 100vw;
+    padding: 0px;
+    margin: 0px;
+    margin-left: 0px;
+    padding-top: 1.2in;
+    color: white;
+}
 td{
     vertical-align: middle;
 }
@@ -23,6 +33,10 @@ button:hover{
 a{
     color: white;
     text-decoration: underline;
+}
+.btn-get-started{
+    font-size: 40px;
+    
 }
 .dropdown-menu a{
     text-decoration: none;
@@ -72,7 +86,6 @@ a{
     color: white;
 }
 #mainTable{
-    position: absolute;
     width: 100vw;
     height: fit-content;
     background: transparent;
@@ -175,7 +188,6 @@ a{
     padding: 0px;
     margin: 0px;
     background-color: transparent;
-    position: absolute;
 }
 
 #hope-header{

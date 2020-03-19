@@ -22,8 +22,9 @@ body{
 }
 #intro1{
     background: url(./img/people-taking-picture-of-a-painting-of-mona-lisa-with-face-3957980.jpg);
-    background-size: cover;
-    background-position-x: -100px; 
+    background-size: auto 130%;
+    background-position-y: -150px;
+    background-position-x: -100px;
 }
 td{
     vertical-align: middle;

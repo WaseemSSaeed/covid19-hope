@@ -56,7 +56,7 @@
     <div class="row" style="width: 100vw; margin: 0px; padding: 0px; min-height: 100vh">
       <div id="intro1" class="col-lg-6 col-12" style="overflow: hidden;">
         <br><br>
-        <div id="outbreak">
+        <div id="outbreak" style="overflow-y: hidden;">
           <div id="outbreak-body">
           </div>
         </div>
@@ -179,305 +179,311 @@
       </tr>
     </table>
 
-    <table id="asia" class="table" style="width: 90%; margin: auto; background-color:grey; margin-top: 0px">
-      <thead class="thead-dark">
-        <tr>
-          <th scope="col">Project</th>
-          <th scope="col">Country</th>
-          <th scope="col">Environment</th>
-          <th scope="col">Thanks To</th>
-          <th scope="col">Applications</th>
-          <th scope="col">on COVID19-Hope</th>
-        </tr>
-      </thead>
-      <tbody style="color: white; z-index: 10">
-        <tr id="Tommaso-Bonomo" style="background-color: royalblue">
-          <th scope="row" style="width: 15%; vertical-align: middle">
-            <a href="https://github.com/tommasobonomo/covid19-italy" target="_blank">
-              COVID-19 in Italy
-            </a>
-          </th>
-          <td style="vertical-align: middle;">
-            Italy
-          </td>
-          <td style="vertical-align: middle; width: 5%">
-            Python
-          </td>
-          <td style="width: 25%; vertical-align:middle">
-            - Tommaso Bonomo <a target="_blank" href="https://twitter.com/tommybonomo">Twitter Link</a><br>
-          </td>
-          <td style="vertical-align: middle;">Quick streamlit dashboard to visualise the impact of COVID-19 in Italy
-          </td>
-          <td style="vertical-align: middle; width: 20%">
-            Edited: March,18 03:20pm GMT by Wassem S.
-            <br>
-          </td>
-        </tr>
-        <!--=====================================================================================-->
-        <tr id="covid19-dashboard" style="background-color:rgb(156, 18, 156)">
-          <th scope="row" style="width: 10%; vertical-align: middle">
-            <a href="https://github.com/machine-learning-apps/covid19-dashboard" target="_blank">
-              covid19-dashboard
-            </a>
-          </th>
-          <td style="vertical-align: middle;">Italy</td>
-          <td style="vertical-align: middle">
-            Jupyter Notebook
-          </td>
-          <td style="vertical-align:middle">
-            - Hamel Husain <a target="_blank" href="http://hamel.io/">Personal Website</a><br>
-          </td>
-          <td style="vertical-align: middle;">
-            Do you have a visualization that you would like to add? Or would you like to improve or fix an existing visualization?
-            <br>Please submit a pull request1 or get in touch!.
-          </td>
-          <td style="vertical-align: middle; width: 20%">
-            Edited: March,18 03:20pm GMT by Wassem S.
-            <br>
-          </td>
-        </tr>
-        <!--=====================================================================================-->
-        <tr id="covid19-dashboard" style="background-color:royalblue">
-          <th scope="row" style="width: 10%; vertical-align: middle">
-            <a href="https://github.com/pcm-dpc/COVID-19" target="_blank">
-              COVID-19 Italy - Situation monitoring
-            </a>
-          </th>
-          <td style="vertical-align: middle;">Italy</td>
-          <td style="vertical-align: middle">
-            (Data)
-          </td>
-          <td style="vertical-align:middle">
-            - Bruce Becker <a target="_blank" href="https://brucellino.github.io/">Personal Website</a><br>
-          </td>
-          <td style="vertical-align: middle;">
-            
-          </td>
-          <td style="vertical-align: middle; width: 20%">
-            Edited: March,18 03:32pm GMT by Wassem S.
-            <br>
-          </td>
-        </tr>
-        <!--=====================================================================================-->
-        <tr id="covid19-dashboard" style="background-color:rgb(156, 18, 156)">
-          <th scope="row" style="width: 10%; vertical-align: middle">
-            <a href="https://github.com/CSSEGISandData/COVID-19" target="_blank">
-              Novel Coronavirus (COVID-19) Cases, provided by JHU CSSE
-            </a>
-          </th>
-          <td style="vertical-align: middle;">
-            China
-          </td>
-          <td style="vertical-align: middle">
-            (Data & reports)
-          </td>
-          <td style="vertical-align:middle">
-            - CSSEGISandData <a target="_blank" href="https://github.com/CSSEGISandData">GitHub</a><br>
-          </td>
-          <td style="vertical-align: middle;">
-            This is the data repository for the 2019 Novel Coronavirus Visual Dashboard operated by the
-            Johns Hopkins University Center for Systems Science and Engineering (JHU CSSE).
-            <br>Also, Supported by ESRI Living Atlas Team and the Johns Hopkins University Applied Physics Lab (JHU APL).
-          </td>
-          <td style="vertical-align: middle; width: 20%">
-            Edited: March,18 03:32pm GMT by Wassem S.
-            <br>
-          </td>
-        </tr>
+    <div id="tPrjs">
+      <table id="prjs" class="table" style="width: 90%; margin: auto; background-color:grey; margin-top: 0px">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Project</th>
+            <th scope="col">Country</th>
+            <th scope="col">Environment</th>
+            <th scope="col">Thanks To</th>
+            <th scope="col">Applications</th>
+            <th scope="col">on COVID19-Hope</th>
+          </tr>
+        </thead>
+        <tbody style="color: white; z-index: 10">
+          <tr id="Tommaso-Bonomo" style="background-color: royalblue">
+            <th scope="row" style="width: 15%; vertical-align: middle">
+              <a href="https://github.com/tommasobonomo/covid19-italy" target="_blank">
+                COVID-19 in Italy
+              </a>
+            </th>
+            <td style="vertical-align: middle;">
+              Italy
+            </td>
+            <td style="vertical-align: middle; width: 5%">
+              Python
+            </td>
+            <td style="width: 25%; vertical-align:middle">
+              - Tommaso Bonomo <a target="_blank" href="https://twitter.com/tommybonomo">Twitter Link</a><br>
+            </td>
+            <td style="vertical-align: middle;">Quick streamlit dashboard to visualise the impact of COVID-19 in Italy
+            </td>
+            <td style="vertical-align: middle; width: 20%">
+              Edited: March,18 03:20pm GMT by Wassem S.
+              <br>
+            </td>
+          </tr>
+          <!--=====================================================================================-->
+          <tr id="covid19-dashboard" style="background-color:rgb(156, 18, 156)">
+            <th scope="row" style="width: 10%; vertical-align: middle">
+              <a href="https://github.com/machine-learning-apps/covid19-dashboard" target="_blank">
+                covid19-dashboard
+              </a>
+            </th>
+            <td style="vertical-align: middle;">Italy</td>
+            <td style="vertical-align: middle">
+              Jupyter Notebook
+            </td>
+            <td style="vertical-align:middle">
+              - Hamel Husain <a target="_blank" href="http://hamel.io/">Personal Website</a><br>
+            </td>
+            <td style="vertical-align: middle;">
+              Do you have a visualization that you would like to add? Or would you like to improve or fix an existing visualization?
+              <br>Please submit a pull request1 or get in touch!.
+            </td>
+            <td style="vertical-align: middle; width: 20%">
+              Edited: March,18 03:20pm GMT by Wassem S.
+              <br>
+            </td>
+          </tr>
+          <!--=====================================================================================-->
+          <tr id="covid19-dashboard" style="background-color:royalblue">
+            <th scope="row" style="width: 10%; vertical-align: middle">
+              <a href="https://github.com/pcm-dpc/COVID-19" target="_blank">
+                COVID-19 Italy - Situation monitoring
+              </a>
+            </th>
+            <td style="vertical-align: middle;">Italy</td>
+            <td style="vertical-align: middle">
+              (Data)
+            </td>
+            <td style="vertical-align:middle">
+              - Bruce Becker <a target="_blank" href="https://brucellino.github.io/">Personal Website</a><br>
+            </td>
+            <td style="vertical-align: middle;">
+              
+            </td>
+            <td style="vertical-align: middle; width: 20%">
+              Edited: March,18 03:32pm GMT by Wassem S.
+              <br>
+            </td>
+          </tr>
+          <!--=====================================================================================-->
+          <tr id="covid19-dashboard" style="background-color:rgb(156, 18, 156)">
+            <th scope="row" style="width: 10%; vertical-align: middle">
+              <a href="https://github.com/CSSEGISandData/COVID-19" target="_blank">
+                Novel Coronavirus (COVID-19) Cases, provided by JHU CSSE
+              </a>
+            </th>
+            <td style="vertical-align: middle;">
+              China
+            </td>
+            <td style="vertical-align: middle">
+              (Data & reports)
+            </td>
+            <td style="vertical-align:middle">
+              - CSSEGISandData <a target="_blank" href="https://github.com/CSSEGISandData">GitHub</a><br>
+            </td>
+            <td style="vertical-align: middle;">
+              This is the data repository for the 2019 Novel Coronavirus Visual Dashboard operated by the
+              Johns Hopkins University Center for Systems Science and Engineering (JHU CSSE).
+              <br>Also, Supported by ESRI Living Atlas Team and the Johns Hopkins University Applied Physics Lab (JHU APL).
+            </td>
+            <td style="vertical-align: middle; width: 20%">
+              Edited: March,18 03:32pm GMT by Wassem S.
+              <br>
+            </td>
+          </tr>
 
-        <!--=====================================================================================-->
-        <tr id="covid19-dashboard" style="background-color: royalblue">
-          <th scope="row" style="width: 10%; vertical-align: middle">
-            <a href="https://github.com/BlankerL/DXY-COVID-19-Data" target="_blank">
-              2019 New Coronavirus Epidemic Time Series Data Warehouse
-            </a>
-          </th>
-          <td style="vertical-align: middle;">
-            
-          </td>
-          <td style="vertical-align: middle">
-            (Data)
-          </td>
-          <td style="vertical-align:middle">
-            - Isaac Lin <a target="_blank" href="https://github.com/BlankerL">GitHub</a><br>
-            <a target="_blank" href="https://isaaclin.cn/">Personal Website</a>
-          </td>
-          <td style="vertical-align: middle;">
-            CSV file list:<br>
-            -National data DXYOverall.csv<br>
-            -Area data DXYArea.csv (including English city name)<br>
-            -News data DXYNews.csv<br>
-            -Rumor data DXYRumors.csv<br>
-          </td>
-          <td style="vertical-align: middle; width: 20%">
-            Edited: March,18 03:46pm GMT by Wassem S.
-            <br>
-          </td>
-        </tr>
+          <!--=====================================================================================-->
+          <tr id="covid19-dashboard" style="background-color: royalblue">
+            <th scope="row" style="width: 10%; vertical-align: middle">
+              <a href="https://github.com/BlankerL/DXY-COVID-19-Data" target="_blank">
+                2019 New Coronavirus Epidemic Time Series Data Warehouse
+              </a>
+            </th>
+            <td style="vertical-align: middle;">
+              
+            </td>
+            <td style="vertical-align: middle">
+              (Data)
+            </td>
+            <td style="vertical-align:middle">
+              - Isaac Lin <a target="_blank" href="https://github.com/BlankerL">GitHub</a><br>
+              <a target="_blank" href="https://isaaclin.cn/">Personal Website</a>
+            </td>
+            <td style="vertical-align: middle;">
+              CSV file list:<br>
+              -National data DXYOverall.csv<br>
+              -Area data DXYArea.csv (including English city name)<br>
+              -News data DXYNews.csv<br>
+              -Rumor data DXYRumors.csv<br>
+            </td>
+            <td style="vertical-align: middle; width: 20%">
+              Edited: March,18 03:46pm GMT by Wassem S.
+              <br>
+            </td>
+          </tr>
 
-        <!--=====================================================================================-->
-        <tr id="covid19-dashboard" style="background-color: rgb(156, 18, 156)">
-          <th scope="row" style="width: 10%; vertical-align: middle">
-            <a href="https://github.com/tokyo-metropolitan-gov/covid19/blob/development/README_EN.md" target="_blank">
-              Tokyo COVID-19 Task Force website
-            </a>
-          </th>
-          <td style="vertical-align: middle;">
-            Japan
-          </td>
-          <td style="vertical-align: middle">
-            
-          </td>
-          <td style="vertical-align:middle">
-            
-          </td>
-          <td style="vertical-align: middle;">
-            ((Contributors, thank you for participating in this project!
-            <br>If you have any questions, feel free to ask Seki, the development manager on Slack etc.
-            <br>This page shows how you can contribute to the development of this site: <a href="https://github.com/tokyo-metropolitan-gov/covid19/blob/development/.github/CONTRIBUTING_EN.md" target="_blank">
-              Press Here
-            </a>...))
-          </td>
-          <td style="vertical-align: middle; width: 20%">
-            Edited: March,18 04:04pm GMT by Wassem S.
-            <br>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+          <!--=====================================================================================-->
+          <tr id="covid19-dashboard" style="background-color: rgb(156, 18, 156)">
+            <th scope="row" style="width: 10%; vertical-align: middle">
+              <a href="https://github.com/tokyo-metropolitan-gov/covid19/blob/development/README_EN.md" target="_blank">
+                Tokyo COVID-19 Task Force website
+              </a>
+            </th>
+            <td style="vertical-align: middle;">
+              Japan
+            </td>
+            <td style="vertical-align: middle">
+              
+            </td>
+            <td style="vertical-align:middle">
+              
+            </td>
+            <td style="vertical-align: middle;">
+              ((Contributors, thank you for participating in this project!
+              <br>If you have any questions, feel free to ask Seki, the development manager on Slack etc.
+              <br>This page shows how you can contribute to the development of this site: <a href="https://github.com/tokyo-metropolitan-gov/covid19/blob/development/.github/CONTRIBUTING_EN.md" target="_blank">
+                Press Here
+              </a>...))
+            </td>
+            <td style="vertical-align: middle; width: 20%">
+              Edited: March,18 04:04pm GMT by Wassem S.
+              <br>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
   </div>
 
   <div id="guide" style="position: relative; margin-top: 0px; padding: 0px; padding-top: 150px; height: 100vh; display: grid; z-index: 1">
     <span style="font-size: 40px; color: royalblue">Guide Per Country</span><br>
-    <table id="asia" class="table" style="width: 80%; margin: auto; background-color:grey; margin-bottom: 10px">
-      <thead class="thead-dark">
-        <tr>
-          <th scope="col">Country</th>
-          <th scope="col">What to do?</th>
-          <th scope="col">Links</th>
-          <th scope="col">Cases</th>
-          <th scope="col">Editions</th>
-        </tr>
-      </thead>
-      <tbody style="color: white; z-index: 10">
-        <tr id="syria">
-          <th scope="row" style="width: 10%; vertical-align: middle">Syria</th>
-          <td style="vertical-align: middle; width: 20%">
-            1- Stay home as possible.<br>
-            2- 
-          </td>
-          <td style="width: 40%;"><br><br>
-            1- World Health Organization in arabic: <a target="_blank" href="https://www.who.int/ar">Press Here</a><br>
-            2- MedDose Team Facebook Group: <a target="_blank" href="https://facebook.com/groups/206948352678186">Press Here</a><br>
-            3- MedDose Team Facebook Page: <a target="_blank" href="https://facebook.com/medicine.pharma.dentist/">Press Here</a><br>
-          </td>
-          <td style="vertical-align: middle;">[No cases]</td>
-          <td style="vertical-align: middle; width: 20%">
-            Last Edition: 05:45pm
-            <br>
-            <a href="https://github.com/WaseemSSaeed/covid19-hope/blob/master/index.htm"><button class="btn btn-primary">Edit</button></a>
-          </td>
-        </tr>
-        <tr id="china">
-          <th scope="row">China</th>
-          <td></td>
-          <td></td>
-          <td>
-            <span style="font-weight: bold; color:rgb(196, 253, 109)"> 8,940	Active</span><br>
-            Source: worldometers.info
-          </td>
-          <td>
-            Last Edited: 07:20pm<br>
-            by Wassem S.<br>
-            <a href="https://github.com/WaseemSSaeed/covid19-hope/blob/master/index.htm"><button class="btn btn-primary">Edit</button></a>
-          </td>
-        </tr>
-        <tr id="malaysia">
-          <th scope="row">Malaysia</th>
-          <td></td>
-          <td></td>
-          <td>
-            <span style="font-weight: bold; color:rgb(196, 253, 109)"> 622	Active</span><br>
-            Source: same as above
-          </td>
-          <td>
-            Last Edited: 07:20pm<br>
-            by Wassem S.<br>
-            <a href="https://github.com/WaseemSSaeed/covid19-hope/blob/master/index.htm"><button class="btn btn-primary">Edit</button></a>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+    <div id="tGuide">
+      <table id="asia" class="table" style="width: 80%; margin: auto; background-color:grey; margin-bottom: 10px">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Country</th>
+            <th scope="col">What to do?</th>
+            <th scope="col">Links</th>
+            <th scope="col">Cases</th>
+            <th scope="col">Editions</th>
+          </tr>
+        </thead>
+        <tbody style="color: white; z-index: 10">
+          <tr id="syria">
+            <th scope="row" style="width: 10%; vertical-align: middle">Syria</th>
+            <td style="vertical-align: middle; width: 20%">
+              1- Stay home as possible.<br>
+              2- 
+            </td>
+            <td style="width: 40%;"><br><br>
+              1- World Health Organization in arabic: <a target="_blank" href="https://www.who.int/ar">Press Here</a><br>
+              2- MedDose Team Facebook Group: <a target="_blank" href="https://facebook.com/groups/206948352678186">Press Here</a><br>
+              3- MedDose Team Facebook Page: <a target="_blank" href="https://facebook.com/medicine.pharma.dentist/">Press Here</a><br>
+            </td>
+            <td style="vertical-align: middle;">[No cases]</td>
+            <td style="vertical-align: middle; width: 20%">
+              Last Edition: 05:45pm
+              <br>
+              <a href="https://github.com/WaseemSSaeed/covid19-hope/blob/master/index.htm"><button class="btn btn-primary">Edit</button></a>
+            </td>
+          </tr>
+          <tr id="china">
+            <th scope="row">China</th>
+            <td></td>
+            <td></td>
+            <td>
+              <span style="font-weight: bold; color:rgb(196, 253, 109)"> 8,940	Active</span><br>
+              Source: worldometers.info
+            </td>
+            <td>
+              Last Edited: 07:20pm<br>
+              by Wassem S.<br>
+              <a href="https://github.com/WaseemSSaeed/covid19-hope/blob/master/index.htm"><button class="btn btn-primary">Edit</button></a>
+            </td>
+          </tr>
+          <tr id="malaysia">
+            <th scope="row">Malaysia</th>
+            <td></td>
+            <td></td>
+            <td>
+              <span style="font-weight: bold; color:rgb(196, 253, 109)"> 622	Active</span><br>
+              Source: same as above
+            </td>
+            <td>
+              Last Edited: 07:20pm<br>
+              by Wassem S.<br>
+              <a href="https://github.com/WaseemSSaeed/covid19-hope/blob/master/index.htm"><button class="btn btn-primary">Edit</button></a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
 
-    <table id="africa" class="table" style="width: 80%; margin: auto; margin-top: 0px; background-color:grey; margin-bottom: 10px">
-      <thead class="thead-dark">
-        <tr>
-          <th scope="col">Country</th>
-          <th scope="col">What to do?</th>
-          <th scope="col">Links</th>
-          <th scope="col">Cases</th>
-          <th scope="col">Editions</th>
-        </tr>
-      </thead>
-      <tbody style="color: white; z-index: 10">
-        <tr>
-          <th scope="row" style="width: 10%; vertical-align: middle">Syria</th>
-          <td style="vertical-align: middle; width: 20%">
-            1- Stay home as possible.<br>
-            2- 
-          </td>
-          <td style="width: 40%;"><br><br>
-            1- World Health Organization in arabic: <a target="_blank" href="https://www.who.int/ar">Press Here</a><br>
-            2- MedDose Team Facebook Group: <a target="_blank" href="https://facebook.com/groups/206948352678186">Press Here</a><br>
-            3- MedDose Team Facebook Page: <a target="_blank" href="https://facebook.com/medicine.pharma.dentist/">Press Here</a><br>
-          </td>
-          <td style="vertical-align: middle;">[No cases]</td>
-          <td style="vertical-align: middle; width: 20%">Last Edition: 05:45pm</td>
-        </tr>
-        <tr>
-          <th scope="row">China</th>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-      </tbody>
-    </table>
+      <table id="africa" class="table" style="width: 80%; margin: auto; margin-top: 0px; background-color:grey; margin-bottom: 10px">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Country</th>
+            <th scope="col">What to do?</th>
+            <th scope="col">Links</th>
+            <th scope="col">Cases</th>
+            <th scope="col">Editions</th>
+          </tr>
+        </thead>
+        <tbody style="color: white; z-index: 10">
+          <tr>
+            <th scope="row" style="width: 10%; vertical-align: middle">Syria</th>
+            <td style="vertical-align: middle; width: 20%">
+              1- Stay home as possible.<br>
+              2- 
+            </td>
+            <td style="width: 40%;"><br><br>
+              1- World Health Organization in arabic: <a target="_blank" href="https://www.who.int/ar">Press Here</a><br>
+              2- MedDose Team Facebook Group: <a target="_blank" href="https://facebook.com/groups/206948352678186">Press Here</a><br>
+              3- MedDose Team Facebook Page: <a target="_blank" href="https://facebook.com/medicine.pharma.dentist/">Press Here</a><br>
+            </td>
+            <td style="vertical-align: middle;">[No cases]</td>
+            <td style="vertical-align: middle; width: 20%">Last Edition: 05:45pm</td>
+          </tr>
+          <tr>
+            <th scope="row">China</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
 
-    <table id="europe" class="table" style="width: 80%; margin: auto; margin-top: 0px; background-color:grey">
-      <thead class="thead-dark">
-        <tr>
-          <th scope="col">Country</th>
-          <th scope="col">What to do?</th>
-          <th scope="col">Links</th>
-          <th scope="col">Cases</th>
-          <th scope="col">Editions</th>
-        </tr>
-      </thead>
-      <tbody style="color: white; z-index: 10">
-        <tr>
-          <th scope="row" style="width: 10%; vertical-align: middle">Syria</th>
-          <td style="vertical-align: middle; width: 20%">
-            1- Stay home as possible.<br>
-            2- 
-          </td>
-          <td style="width: 40%;"><br><br>
-            1- World Health Organization in arabic: <a target="_blank" href="https://www.who.int/ar">Press Here</a><br>
-            2- MedDose Team Facebook Group: <a target="_blank" href="https://facebook.com/groups/206948352678186">Press Here</a><br>
-            3- MedDose Team Facebook Page: <a target="_blank" href="https://facebook.com/medicine.pharma.dentist/">Press Here</a><br>
-          </td>
-          <td style="vertical-align: middle;">[No cases]</td>
-          <td style="vertical-align: middle; width: 20%">Last Edition: 05:45pm</td>
-        </tr>
-        <tr>
-          <th scope="row">China</th>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-      </tbody>
-    </table>
+      <table id="europe" class="table" style="width: 80%; margin: auto; margin-top: 0px; background-color:grey">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Country</th>
+            <th scope="col">What to do?</th>
+            <th scope="col">Links</th>
+            <th scope="col">Cases</th>
+            <th scope="col">Editions</th>
+          </tr>
+        </thead>
+        <tbody style="color: white; z-index: 10">
+          <tr>
+            <th scope="row" style="width: 10%; vertical-align: middle">Syria</th>
+            <td style="vertical-align: middle; width: 20%">
+              1- Stay home as possible.<br>
+              2- 
+            </td>
+            <td style="width: 40%;"><br><br>
+              1- World Health Organization in arabic: <a target="_blank" href="https://www.who.int/ar">Press Here</a><br>
+              2- MedDose Team Facebook Group: <a target="_blank" href="https://facebook.com/groups/206948352678186">Press Here</a><br>
+              3- MedDose Team Facebook Page: <a target="_blank" href="https://facebook.com/medicine.pharma.dentist/">Press Here</a><br>
+            </td>
+            <td style="vertical-align: middle;">[No cases]</td>
+            <td style="vertical-align: middle; width: 20%">Last Edition: 05:45pm</td>
+          </tr>
+          <tr>
+            <th scope="row">China</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
   </div>
 </body>
 
@@ -524,6 +530,18 @@
       document.getElementById("newId").style.marginTop = "30px";
       document.getElementById("newId").style.marginLeft = "10%";
       document.getElementById("btn-get-started").style.fontSize = "50px";
+      
+      document.getElementById("prjs").style.fontSize = "30px";
+      document.getElementById("tPrjs").style.overflowX = "scroll";
+      document.getElementById("tPrjs").style.padding = "20px";
+
+      document.getElementById("asia").style.fontSize = "30px";
+      document.getElementById("africa").style.fontSize = "30px";
+      document.getElementById("europe").style.fontSize = "30px";
+
+      document.getElementById("tGuide").style.overflowX = "scroll";
+      document.getElementById("tGuide").style.padding = "20px";
+
 
       document.getElementById("intro1").style.height = "30vh";
       document.getElementById("intro2").style.height = "70vh";

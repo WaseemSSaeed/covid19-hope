@@ -556,5 +556,17 @@ $(document).ready(function(){
       });
     } // End if
   });
+
+  var s = 1;
+  setInterval(function(){
+    document.getElementById("outbreak-body").scrollBy(0, s, {behavior: 'smooth'});
+  },60);
+
+  $('.update').mouseover(function(){
+    s = 0;
+  });
+  $('.update').mouseleave(function(){
+    s = 1;
+  });
 });
 </script>

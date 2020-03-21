@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="./font/css/leCafeTech2.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -23,7 +23,7 @@
           <a class="dropdown-item" href="#guide">Asia</a>
           <a class="dropdown-item" href="#europe">Europe</a>
           <a class="dropdown-item" href="#africa">Africa</a>
-          <a class="dropdown-item" href="#">S. America</a> 
+          <a class="dropdown-item" href="#">S. America</a>
           <a class="dropdown-item" href="#">N. America</a>
           <a class="dropdown-item" href="#">Australia</a>
         </div>
@@ -471,6 +471,15 @@
   }
 </script>
 <script>
+  var s = 1;
+  setInterval(function(){
+      document.getElementById("outbreak-body").scrollBy(0, s, {behavior: 'smooth'});
+      if($('#outbreak-body').scrollTop() > $('#outbreak').height()+50) {
+        setTimeout(function(){
+            document.getElementById("outbreak-body").scrollTo(0, 0, {behavior: 'smooth'});
+        },1000);
+      }
+  },60);
   $('.update').mouseover(function(){
     s = 0;
   });
@@ -497,6 +506,9 @@
       document.getElementById("outbreak").style.marginLeft = "10%";
       document.getElementById("btn-get-started").style.fontSize = "50px";
       
+      document.getElementById('outbreak-body').classList += 'mob';
+      document.getElementById("outbreak-header").style.fontSize = "30px";
+
       document.getElementById("prjs").style.fontSize = "30px";
       document.getElementById("tPrjs").style.overflowX = "scroll";
       document.getElementById("tPrjs").style.padding = "20px";
@@ -521,7 +533,7 @@
         x[i].style.fontSize = "30px";
       }
 
-      document.getElementById('outbreak-body').style.width = "70%";
+      document.getElementById('outbreak').style.width = "70%";
       var x = document.getElementsByClassName("update");
       var i;
       for (i = 0; i < x.length; i++) {
@@ -544,16 +556,6 @@
       }
   }
 $(document).ready(function(){
-  var s = 1;
-  setInterval(function(){
-      document.getElementById("outbreak-body").scrollBy(0, s, {behavior: 'smooth'});
-      if($('#outbreak-body').scrollTop() > $('#outbreak').height()+50) {
-        setTimeout(function(){
-            document.getElementById("outbreak-body").scrollTo(0, 0, {behavior: 'smooth'});
-        },1000);
-      }
-  },60);
-  
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
     // Make sure this.hash has a value before overriding default behavior

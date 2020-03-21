@@ -300,6 +300,9 @@ a{
     border-radius: 5px;
 }
 .mob::-webkit-scrollbar{
+    background-color: rgba(0, 128, 128, 0.541);
+    border-radius: 5px;
+    width: unset;
     width: 50px;
 }
 #outbreak-body{

@@ -471,6 +471,21 @@
   }
 </script>
 <script>
+  var s = 1;
+  setInterval(function(){
+      document.getElementById("outbreak-body").scrollBy(0, s, {behavior: 'smooth'});
+      if($('#outbreak-body').scrollTop() > $('#outbreak').height()+50) {
+        setTimeout(function(){
+            document.getElementById("outbreak-body").scrollTo(0, 0, {behavior: 'smooth'});
+        },1000);
+      }
+  },60);
+  $('.update').mouseover(function(){
+    s = 0;
+  });
+  $('.update').mouseleave(function(){
+    s = 1;
+  });
   var isMobile = false; //initiate as false
   // device detection
   if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|ipad|iris|kindle|Android|Silk|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(navigator.userAgent) 
@@ -555,18 +570,6 @@ $(document).ready(function(){
         window.location.hash = hash;
       });
     } // End if
-  });
-
-  var s = 1;
-  setInterval(function(){
-    document.getElementById("outbreak-body").scrollBy(0, s, {behavior: 'smooth'});
-  },60);
-
-  $('.update').mouseover(function(){
-    s = 0;
-  });
-  $('.update').mouseleave(function(){
-    s = 1;
   });
 });
 </script>

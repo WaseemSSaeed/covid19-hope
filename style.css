@@ -12,7 +12,6 @@ body{
     padding-right: 5%;
     scrollbar-base-color: teal;
 }
-
 #intro{
     min-height: 100vh;
     margin-bottom: 100px;
@@ -45,6 +44,7 @@ a{
     color: white;
     text-decoration: underline;
 }
+
 .btn-get-started{
     font-size: 40px;
     
@@ -302,7 +302,6 @@ a{
 .mob::-webkit-scrollbar{
     background-color: rgba(0, 128, 128, 0.541);
     border-radius: 5px;
-    width: unset;
     width: 50px;
 }
 #outbreak-body{

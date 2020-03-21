@@ -67,12 +67,12 @@
       <div id="intro1" class="col-lg-6 col-12" style="overflow: hidden;">
         <br><br>
         <div id="outbreak" class="row">
-            <div class="outb-cont col-lg-12" style="height: 45%;">
+            <div class="outb-cont col-lg-12 col-6" style="height: 45%;">
               <p id="outbreak-header" class="outbreak-header">OUTBREAKS WORLDWIDE</p>
               <div id="outbreak-body">
               </div>
             </div>
-            <div class="outb-cont col-lg-12" style="height: 45%; margin-top: 30px">
+            <div class="outb-cont col-lg-12 col-6" id="out-edu" style="height: 45%; margin-top: 30px">
               <p id="outbreak-header" class="outbreak-header" style="background-color: rgba(0, 128, 0, 0.808);">Education Related</p>
               <div id="outbreak-body-edu">
               </div>
@@ -509,16 +509,17 @@
   var sedu = 1;
   var ref = 1;
   var posEdu = 0;
+  var fr = 300;
   setInterval(function(){
     document.getElementById("outbreak-body").scrollBy(0, s, {behavior: 'smooth'});
     document.getElementById("outbreak-body-edu").scrollBy(0, sedu, {behavior: 'smooth'});
     posEdu+=sedu;
-    if($('#outbreak-body').scrollTop() > $('#outbreak').height()+300) {
+    if($('#outbreak-body').scrollTop() > $('#outbreak').height()+fr) {
       setTimeout(function(){
           document.getElementById("outbreak-body").scrollTo(0, 0, {behavior: 'smooth'});
       },10);
     }
-    if($('#outbreak-body-edu').scrollTop() > $('#outbreak').height()+300) {
+    if($('#outbreak-body-edu').scrollTop() > $('#outbreak').height()+fr) {
       setTimeout(function(){
           document.getElementById("outbreak-body-edu").scrollTo(0, 0, {behavior: 'smooth'});
       },10);
@@ -544,6 +545,7 @@
       s = 5;
       sedu = 5;
       ref = 5;
+      fr = 0;
 
       var x = document.getElementsByClassName("navbtn-logo");
       var i;
@@ -560,14 +562,18 @@
         x[i].style.fontSize = "30px";
       }
 
+      document.getElementById("navBar2").style.height = "fit-content";
+      document.getElementById("navBar2").style.backgroundColor = "gray";
+
       var newsUpdate = document.getElementById("outbreak");
       newsUpdate.id  = "outbreak";
       document.getElementById("intro2").appendChild(newsUpdate); 
-      document.getElementById("outbreak").style.height = "60%";
+      document.getElementById("outbreak").style.height = "80%";
       document.getElementById("outbreak").style.marginTop = "30px";
       document.getElementById("outbreak").style.marginLeft = "10%";
       document.getElementById("btn-get-started").style.fontSize = "50px";
       
+      document.getElementById('out-edu').style.marginTop = '0px';
       document.getElementById('outbreak-body').classList += 'mob';
       document.getElementById('outbreak-body-edu').classList += 'mob';
 
@@ -607,7 +613,11 @@
         x[i].style.fontSize = "30px";
       }
 
-      document.getElementById('outbreak').style.width = "70%";
+      document.getElementById('outbreak').style.width = "100%";
+      document.getElementById('outbreak').style.height = "100%";
+      document.getElementById('outbreak').style.marginLeft = "-10px";
+      document.getElementById('outbreak').style.padding = "0px";
+
       var x = document.getElementsByClassName("update");
       var i;
       for (i = 0; i < x.length; i++) {

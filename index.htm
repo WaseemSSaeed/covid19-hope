@@ -471,15 +471,6 @@
   }
 </script>
 <script>
-  var s = 1;
-  setInterval(function(){
-      document.getElementById("outbreak-body").scrollBy(0, s, {behavior: 'smooth'});
-      if($('#outbreak-body').scrollTop() > $('#outbreak').height()+50) {
-        setTimeout(function(){
-            document.getElementById("outbreak-body").scrollTo(0, 0, {behavior: 'smooth'});
-        },1000);
-      }
-  },60);
   $('.update').mouseover(function(){
     s = 0;
   });
@@ -553,6 +544,16 @@
       }
   }
 $(document).ready(function(){
+  var s = 1;
+  setInterval(function(){
+      document.getElementById("outbreak-body").scrollBy(0, s, {behavior: 'smooth'});
+      if($('#outbreak-body').scrollTop() > $('#outbreak').height()+50) {
+        setTimeout(function(){
+            document.getElementById("outbreak-body").scrollTo(0, 0, {behavior: 'smooth'});
+        },1000);
+      }
+  },60);
+  
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
     // Make sure this.hash has a value before overriding default behavior

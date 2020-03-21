@@ -304,7 +304,7 @@ a{
     border-radius: 5px;
     width: 50px;
 }
-#outbreak-body{
+#outbreak-body, #outbreak-body-edu{
     overflow-y: scroll;
     height: 100%;
     /*animation: anmUp 20s linear infinite;*/
@@ -318,7 +318,7 @@ a{
     z-index: 0;
     font-size: 20px;
 }
-#update{
+#update, #update-edu{
     background-color: rgba(76, 0, 130, 0.76);
     background-color: rgba(255, 255, 255, 0.667);
     color: black;
@@ -326,10 +326,14 @@ a{
     width: 100%;
     margin-top: 4px;
 }
-#update:hover{
+#update:hover, #update-edu:hover{
     background-color: rgba(255, 255, 255, 0.7);
 }
 #update:hover .up-headline{
+    padding-left: 40%;
+    transition: 1s;
+}
+#update-edu:hover .up-headline{
     padding-left: 40%;
     transition: 1s;
 }

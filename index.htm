@@ -1,4 +1,6 @@
 <link rel="stylesheet" href="./font/css/leCafeTech2.css">
+<link rel="stylesheet" href="./font/css/cov.css">
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -9,56 +11,23 @@
 <link rel="stylesheet" href="./style.css">
 
 <body>
-  <div id="navBar">
+  <div id="newNav">
+    <div id="navBtns">
+      <a href="#guide"><button class="new hope-btn navbtn-logo" style="background-color:crimson">Guide by Country</button></a>
+      <a href="#open-source-prjs"><button class="hope-btn new navbtn-logo">
+          Share-Quarantine!
+        </button></a>
+      <a href="#open-source-prjs"><button class="new hope-btn navbtn-logo">
+          Global Efforts
+        </button></a>
+    </div>
+  </div>
+
+  <div id="navBar" style="font-size: 30px;">
     <p id="headline">COVID19-Hope <span style="font-family: leCafeTech2;">H</span> </p>
     <span id="pray">Hopes today to Italy <img id="flag" src="./italy-flag.jpg" alt=""></span>
+    <button class="hope-btn" id="openNav">A</button>
   </div>
-  <div id="navBar2">
-      <a href="#guide"><button class="hope-btn navbtn-logo" style="background-color:crimson">Guide by Country</button></a><!--
-      <div class="dropdown" style="width:fit-content; margin: none; padding: none; float: left; margin-left: 5px; margin-top: 2px">
-        <button style="margin: 0px" class="btn btn-important dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Guide by Country
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="#guide">Asia</a>
-          <a class="dropdown-item" href="#europe">Europe</a>
-          <a class="dropdown-item" href="#africa">Africa</a>
-          <a class="dropdown-item" href="#">S. America</a>
-          <a class="dropdown-item" href="#">N. America</a>
-          <a class="dropdown-item" href="#">Australia</a>
-        </div>
-      </div>-->
-
-      <a href="#open-source-prjs"><button class="hope-btn navbtn-logo">
-        Share-Quarantine!
-      </button></a>
-      <a href="#open-source-prjs"><button class="hope-btn navbtn-logo">
-        Global Efforts
-      </button></a><!--
-      <div class="dropdown" style="width:fit-content; margin: none; padding: none; float:left; margin-left: 5px; margin-top: 2px">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Global Efforts
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="#open-source-prjs">Open Source Projects</a>
-          <a class="dropdown-item" href="#">Thanks!</a>
-          <a class="dropdown-item" href="#">Hounor List of this project</a>
-          <a class="dropdown-item" href="#">Tell us yours</a>
-        </div>
-      </div>-->
-      
-      <div class="dropdown" style="width:fit-content; margin: none; padding: none; float:left; margin-left: 5px; margin-top: 2px">
-        <button class="btn btn-secondary dropdown-toggle navbtn-logo" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true">
-          Contribute
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="#">Volunteering</a>
-          <a class="dropdown-item" href="#">Send Your Story</a>
-          <a class="dropdown-item" href="#">Get an Intrveiw</a>
-          <a class="dropdown-item" href="#">Design Your Contribution!</a>
-        </div>
-      </div>
-    </div>
 
   <div id="intro" style="overflow-y: hidden;" class="container">
     <div class="row" style="width: 100vw; margin: 0px; padding: 0px; min-height: 100vh">
@@ -129,15 +98,10 @@
           </div>
 
         </div>
-        <!--
-        <div id="soon">
-          <span style="line-height: 100px">COVID19-Hope&nbsp;&nbsp;<span style="font-family: leCafeTech2; display:inline">H</span></span>
-          <span>going online within the next 48 hours</span>
-        </div>-->
   </div>
 
   
-  <div id="open-source-prjs" style="position: relative; margin-top: 0px; padding: 0px; padding-top: 150px; min-height: 100vh; display: grid; z-index: 1">
+  <div id="open-source-prjs" style="position: relative; margin-top: 0px; min-height: 100vh; display: grid; z-index: 1">
     <table>
       <tr>
         <td>
@@ -322,7 +286,7 @@
     
   </div>
 
-  <div id="guide" style="position: relative; margin-top: 0px; padding: 0px; padding-top: 150px; height: 100vh; display: grid; z-index: 1">
+  <div id="guide" style="position: relative; margin-top: 0px; height: 100vh; display: grid; z-index: 1">
     <span style="font-size: 40px; color: royalblue">Guide Per Country</span><br>
     <div id="tGuide">
       <table id="asia" class="table" style="width: 80%; margin: auto; background-color:grey; margin-bottom: 10px">
@@ -503,6 +467,16 @@
   }
 </script>
 <script>
+  $('#newNav').hide();
+  $('.new').click(function(){
+    $('#newNav').slideUp(1000);
+  });
+  $('#openNav').click(function(){
+    $('#newNav').slideDown(1000);
+  });
+  $('#newNav').click(function(){
+    $('#newNav').slideUp(1000);
+  });
   var s = 1;
   var sedu = 1;
   var ref = 1;
@@ -545,23 +519,11 @@
       ref = 5;
       fr = 0;
 
-      var x = document.getElementsByClassName("navbtn-logo");
-      var i;
-      for (i = 0; i < x.length; i++) {
-        x[i].style.height = "fit-content";
-        x[i].style.fontSize = "30px";
-        x[i].style.margin = "1%";
-        x[i].innerHTML = '<p id="logo1" style="font-family: leCafeTech2; font-size: 120px; margin-bottom: -20px">H</p>' + x[i].innerHTML;
-      }
-
       var x = document.getElementsByTagName("button");
       var i;
       for (i = 0; i < x.length; i++) {
         x[i].style.fontSize = "30px";
       }
-
-      document.getElementById("navBar2").style.height = "fit-content";
-      document.getElementById("navBar2").style.backgroundColor = "gray";
 
       var newsUpdate = document.getElementById("outbreak");
       newsUpdate.id  = "outbreak";
@@ -581,18 +543,33 @@
         x[i].style.fontSize = "30px";
       }
 
+      document.getElementById('openNav').style.fontSize = '50px';
+
+      document.getElementById('navBar').style.height = '1in';
+      document.getElementById('navBar').style.fontSize = '35px';
+      document.getElementById('navBar').style.paddingTop = '10px';
+      document.getElementById('navBtns').style.width = '80%';
+      document.getElementById('navBtns').style.padding = '10%';
+      document.getElementById('navBtns').style.paddingTop = '20%';
+      document.getElementById('navBtns').style.paddingBottom = '20%';
+      var x = document.getElementsByClassName("new");
+      var i;
+      for (i = 0; i < x.length; i++) {
+        x[i].style.fontSize = "55px";
+        x[i].style.width = "90%";
+        x[i].style.height = "fit-content";
+      }
+
+      document.getElementById("open-source-prjs").style.paddingTop = "100px";
       document.getElementById("prjs").style.fontSize = "30px";
       document.getElementById("tPrjs").style.overflowX = "scroll";
       document.getElementById("tPrjs").style.padding = "20px";
-
-      document.getElementById('open-source-prjs').style.paddingTop = '300px';
-      document.getElementById('guide').style.paddingTop = '300px';
-      document.getElementById('mainTable').style.paddingTop = '300px';
 
       document.getElementById("asia").style.fontSize = "30px";
       document.getElementById("africa").style.fontSize = "30px";
       document.getElementById("europe").style.fontSize = "30px";
 
+      document.getElementById('guide').style.paddingTop = '100px';
       document.getElementById("tGuide").style.overflowX = "scroll";
       document.getElementById("tGuide").style.padding = "20px";
 

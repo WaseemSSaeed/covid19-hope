@@ -19,7 +19,7 @@ body{
     padding: 0px;
     margin: 0px;
     margin-left: 0px;
-    padding-top: 1.2in;
+    padding-top: 0.4in;
     color: white;
     overflow: hidden;
 
@@ -85,7 +85,6 @@ a{
 }
 #headline{
     display: inline-block;
-    font-size: 30px;
     font-family: sans-serif;
     color: white;
     margin-top: 10px;
@@ -115,7 +114,6 @@ a{
     margin-left: 10px;
 }
 #pray{
-    font-size: 30px;
     color: white;
     grid-column-start: 2;
     margin-top: 5px;
@@ -268,11 +266,12 @@ a{
 }
 
 #guide{
-    padding-top: 300px;
+    padding-top: 0.6in;
     display: block;
 }
 /*============================================================*/
 #open-source-prjs{
+    padding-top: 0.6in;
     filter: opacity(90%);
 }
 /*88888888888888888888888888888888888888888888888888888888888*/
@@ -352,4 +351,34 @@ a{
     color: white;
     padding-left: 10px;
     transition: 1s;
+}
+
+/*======================================================================*/
+#newNav{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.753);
+    z-index: 110;
+}
+#navBtns{
+    margin: auto;
+    height: fit-content;
+    width: 30%;
+    border: gray 1px solid;
+    border-radius: 20px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.new{
+    height: 50px;
+    width: 80%;
+    margin-left: 10%;
+}
+#openNav{
+    height: fit-content;
+    float: right;
+    width: fit-content;
+    font-family: cov;
 }

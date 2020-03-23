@@ -46,31 +46,7 @@
         </div>
       </div>
       <div id="intro2" class="col-lg-9 col-12" style="position: relative; padding: 5%; padding-top: 1%; background-color: white; height: 100vh">
-        <div class="row">
-
-         <div class="col-lg-3 col-5 hopeBlog">
-            <img src="./img/waseem-how-ispent-my-time.PNG" style="width: 90%; margin: 5%" alt="">
-            <div class="hopeBlog-header">
-              <span class="hopeBlog-title">How I spend my time in the quarantine</span>
-              <span class="hopeBlog-subtitle">Waseem Saeed - Syria</span>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-5 hopeBlog">
-            <img src="./img/waseem-how-ispent-my-time.PNG" style="width: 90%; margin: 5%" alt="">
-            <div class="hopeBlog-header">
-              <span class="hopeBlog-title">How I spend my time in the quarantine</span>
-              <span class="hopeBlog-subtitle">Waseem Saeed - Syria</span>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-5 hopeBlog">
-            <img src="./img/worldometers_graph.PNG" style="width: 90%; margin: 5%" alt="">
-            <div class="hopeBlog-header">
-              <span class="hopeBlog-title">Understand the math of coronavirus</span>
-              <span class="hopeBlog-subtitle">Someone from - Syria</span>
-            </div>
-          </div>
+        <div class="row" id="bloger">
         
         </div>
       </div>
@@ -468,6 +444,21 @@
       document.getElementById(id).style.backgroundColor = "royalblue";
     }
     i++;
+  }
+
+  var i = 0;
+  while(i != blogData.length){
+    document.getElementById('bloger').innerHTML += '\
+                              <div class="col-lg-3 col-5 hopeBlog">\
+                                <img src="'+blogData[i][4]+'" style="width: 90%; margin: 5%" alt="">\
+                                <div class="hopeBlog-header">\
+                                  <a style="text-decoration: unset" target="_blank" href="'+blogData[i][3]+'">\
+                                    <span class="hopeBlog-title">'+blogData[i][0]+'</span>\
+                                    <span class="hopeBlog-subtitle">'+blogData[i][1] +'-'+ blogData[i][2]+'</span>\
+                                  </a>\
+                                </div>\
+                              </div>';
+                              i++;
   }
 
   var i = 0;

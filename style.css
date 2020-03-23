@@ -396,7 +396,7 @@ a{
 }
 /*======================================================================*/
 .hopeBlog{
-    background-color: rgb(102, 102, 102);
+    background-color: rgba(102, 102, 102, 0.747);
     margin: 3px;
     padding: 0px;
     cursor: pointer;
@@ -404,8 +404,6 @@ a{
 }
 .hopeBlog-header{
     width: 100%;
-    margin-top: 0px;
-    margin: 0px;
     padding: 10px;
 }
 .hopeBlog-title{

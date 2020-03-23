@@ -10,7 +10,7 @@
 
 <link rel="stylesheet" href="./style.css">
 
-<body>
+<body onscroll="sc()">
   <div id="newNav">
     <div id="navBtns">
       <a href="#guide"><button class="new hope-btn navbtn-logo" style="background-color:rgba(220, 20, 60, 1)">Guide by Country</button></a>
@@ -31,24 +31,39 @@
 
   <div id="intro" style="overflow-y: hidden;" class="container">
     <div class="row" style="width: 100vw; margin: 0px; padding: 0px; min-height: 100vh">
-      <div id="intro1" class="col-lg-6 col-12" style="overflow: hidden;">
-        <br><br>
-        <div id="outbreak" class="row">
-            <div class="outb-cont col-lg-12 col-6" style="height: 45%;">
+      <div id="intro1" class="col-lg-3 col-12" style="overflow: hidden; padding: 0px">
+        <div id="outbreak" class="row" style="width: 100%; margin-left: 0px; margin: 0px; height: 90%">
+            <div class="outb-cont col-lg-12 col-6" id="outb-cont" style="height: 50%; width: 100%; padding: 0px">
               <p id="outbreak-header" class="outbreak-header">OUTBREAKS WORLDWIDE</p>
               <div id="outbreak-body">
               </div>
             </div>
-            <div class="outb-cont col-lg-12 col-6" id="out-edu" style="height: 45%; margin-top: 30px">
+            <div class="outb-cont col-lg-12 col-6" id="out-edu" style="height: 50%; margin-top: 30px; padding: 0px">
               <p id="outbreak-header" class="outbreak-header" style="background-color: rgba(0, 128, 0, 0.808);">Education Related</p>
               <div id="outbreak-body-edu">
               </div>
             </div>
         </div>
       </div>
-      <div id="intro2" class="col-lg-6 col-12" style="position: relative; background-color: rgba(48, 163, 19, 0.74); height: 100vh">
-        <p style="font-size: 100px;">COVID19-Hope</p>
-        <a href="#mainTable"><button id="btn-get-started" class="btn btn-primary btn-get-started">Get Started</button></a>
+      <div id="intro2" class="col-lg-9 col-12" style="position: relative; padding: 5%; padding-top: 1%; background-color: white; height: 100vh">
+        <div class="row">
+
+         <div class="col-lg-3 col-5 hopeBlog">
+            <img src="./img/waseem-how-ispent-my-time.PNG" style="width: 90%; margin: 5%" alt="">
+            <div class="hopeBlog-header">
+              <span class="hopeBlog-title">How I spend my time in the quarantine</span>
+              <span class="hopeBlog-subtitle">Waseem Saeed - Syria</span>
+            </div>
+          </div>
+          <div class="col-lg-3 col-5 hopeBlog">
+            <img src="./img/waseem-how-ispent-my-time.PNG" style="width: 90%; margin: 5%" alt="">
+            <div class="hopeBlog-header">
+              <span class="hopeBlog-title">How I spend my time in the quarantine</span>
+              <span class="hopeBlog-subtitle">Waseem Saeed - Syria</span>
+            </div>
+          </div>
+        
+        </div>
       </div>
     </div>
   </div>
@@ -467,7 +482,7 @@
   }
 </script>
 <script>
-  $(document).scroll(function(){
+  function sc(){
     if($('body').scrollTop() > 50){
       document.getElementById('navBar').style.opacity = '90%';
     } if($('body').scrollTop() > 400){ 
@@ -477,7 +492,7 @@
     } if($('body').scrollTop() < 50) {
       document.getElementById('navBar').style.opacity = '100%';
     }
-  });
+  }
   $('#newNav').hide(1);
   $('.new').click(function(){
     $('#newNav').slideUp(1000);
@@ -492,7 +507,7 @@
   var sedu = 1;
   var ref = 1;
   var posEdu = 0;
-  var fr = 300;
+  var fr = 290;
   setInterval(function(){
     document.getElementById("outbreak-body").scrollBy(0, s, {behavior: 'smooth'});
     document.getElementById("outbreak-body-edu").scrollBy(0, sedu, {behavior: 'smooth'});
@@ -528,7 +543,7 @@
       s = 5;
       sedu = 4;
       ref = 5;
-      fr = 0;
+      fr = 920;
 
       var x = document.getElementsByTagName("button");
       var i;
@@ -536,19 +551,21 @@
         x[i].style.fontSize = "30px";
       }
 
-      var newsUpdate = document.getElementById("outbreak");
+      /*var newsUpdate = document.getElementById("outbreak");
       newsUpdate.id  = "outbreak";
-      document.getElementById("intro2").appendChild(newsUpdate); 
-      document.getElementById("outbreak").style.height = "80%";
+      document.getElementById("intro2").appendChild(newsUpdate);*/
+      document.getElementById("outbreak").style.height = "90%";
       document.getElementById("outbreak").style.marginTop = "30px";
       document.getElementById("outbreak").style.marginLeft = "10%";
-      document.getElementById("btn-get-started").style.fontSize = "50px";
+      //document.getElementById("btn-get-started").style.fontSize = "50px";
       
       document.getElementById("pray").style.paddingTop = "10px";
       document.getElementById("openNav").style.height = "1in";
       document.getElementById("openNav").style.fontSize = "50px";
 
       document.getElementById('out-edu').style.marginTop = '0px';
+      document.getElementById('out-edu').style.height = '92%';
+      document.getElementById('outb-cont').style.height = '92%';
       document.getElementById('outbreak-body').classList += 'mob';
       document.getElementById('outbreak-body-edu').classList += 'mob';
 
@@ -558,6 +575,13 @@
         x[i].style.fontSize = "30px";
       }
 
+      var x = document.getElementsByClassName("hopeBlog-title");
+      var i;
+      for (i = 0; i < x.length; i++) {
+        x[i].style.fontSize = "35px";
+        x[i].style.padding = "30px";
+        x[i].style.paddingTop = "0px";
+      }
       document.getElementById('navBar').style.height = '1in';
       document.getElementById('navBar').style.fontSize = '35px';
       document.getElementById('navBar').style.paddingTop = '10px';
@@ -587,8 +611,9 @@
       document.getElementById("tGuide").style.padding = "20px";
 
 
-      document.getElementById("intro1").style.height = "30vh";
-      document.getElementById("intro2").style.height = "70vh";
+      document.getElementById("intro1").style.height = "25vh";
+      document.getElementById("intro1").style.paddingBottom = "1in";
+      document.getElementById("intro2").style.height = "75vh";
       document.getElementById("intro1").style.backgroundPositionY = "unset";
       document.getElementById("intro1").style.backgroundPositionX = "unset";
       document.getElementById("intro1").style.backgroundSize = "cover";
@@ -602,8 +627,7 @@
       }
 
       document.getElementById('outbreak').style.width = "100%";
-      document.getElementById('outbreak').style.height = "100%";
-      document.getElementById('outbreak').style.marginLeft = "-10px";
+      document.getElementById('outbreak').style.marginLeft = "-8px";
       document.getElementById('outbreak').style.padding = "0px";
 
       var x = document.getElementsByClassName("update");

@@ -401,6 +401,10 @@ a{
     padding: 0px;
     cursor: pointer;
     border-radius: 20px;
+    filter: brightness(0.95);
+}
+.hopeBlog:hover{
+    filter: brightness(1);
 }
 .hopeBlog-header{
     width: 100%;

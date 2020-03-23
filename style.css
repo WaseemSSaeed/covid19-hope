@@ -394,3 +394,30 @@ a{
     margin-top: 0px;
     height: 0.6in;
 }
+/*======================================================================*/
+.hopeBlog{
+    background-color: rgb(102, 102, 102);
+    margin: 3px;
+    padding: 0px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.hopeBlog-header{
+    width: 100%;
+    margin-top: 0px;
+    margin: 0px;
+    padding: 10px;
+}
+.hopeBlog-title{
+    font-size: 25px;
+    color: white;
+    display: inline-block;
+}
+.hopeBlog-subtitle{
+    font-size: 20px;
+    color: white;
+    display: inline-flex;
+    float: right;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}

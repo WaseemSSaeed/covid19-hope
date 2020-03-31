@@ -21,8 +21,7 @@ var nData = [["UK","BBC","When your children's school is closed,\
                 "https://www.france24.com/en/20200319-italy-to-prolong-coronavirus-lockdown-measures"],
             ];
 
-
-var blogData = [["How I spend my time in the quarantine","Waseem Saeed","Syria",
+var blogData = [["How I spend my time in the self-isolation","Waseem Saeed","Syria",
                 "","./img/waseem-how-ispent-my-time.PNG"],
 
                 ["Understand the math of coronavirus","Someone from","Syria",
